@@ -1,0 +1,13 @@
+*.pyc
+__pycache__/
+
+.DS_Store
+bin/
+include/
+lib/
+pyvenv.cfg
+quickup.code-workspace
+tasks
+.vscode/
+lib64
+cppextend/QUmodule.so
