@@ -6,6 +6,7 @@ version: {datas.version}
 license:
     Closed source before 3.0 version
     GPLv3 and LGPLv3 since 3.0 version
+    The Linux (Ubuntu) version was open source from the very beginning
 author: smart-space(https://smart-space.com.cn/)
 
 Licensed under the GPLv3 and LGPLv3 Licenses. (since 3.0 version)
@@ -24,6 +25,9 @@ Licensed under the GPLv3 and LGPLv3 Licenses. (since 3.0 version)
 
     You should have received a copy of the GNU (Lesser) General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+Quickup-linux (Ubuntu) is built for Ubuntu and shares the same libraries, licenses, assets, names
+and other resources with QuickUp.
 """
 import tkinter as tk
 import sys

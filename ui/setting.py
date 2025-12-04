@@ -7,7 +7,7 @@ import os
 import sys
 import subprocess
 from webbrowser import open as webopen
-from urllib.request import urlopen
+# from urllib.request import urlopen
 from tinui import BasicTinUI, TinUIXml
 from tinui.TinUIDialog import Dialog
 from tinui.theme.tinuidark import TinUIDark
@@ -80,7 +80,7 @@ def init_general():
     #     exitradio.select(0)
 
     # root.bind("<<UpdateReady>>", __update_ready)
-    root.bind("<<UpdateFailed>>", __update_failed)
+    # root.bind("<<UpdateFailed>>", __update_failed)
 
 def set_topmost(flag):
     # 设置窗口置顶

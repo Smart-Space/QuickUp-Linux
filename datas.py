@@ -51,7 +51,7 @@ def tasks_name_initial():
             # task-name[x].json可以看作是QuickUp的彩蛋
             # QuickUp不提供软件中隐藏任务的功能
             # 用户可以自己在文件名中末尾添加[x]来隐藏任务
-            # 该过滤功能仅在每次QuickUp启动时有效，也就是只出现这里
+            # 该过滤功能仅在每次QuickUp启动时有效，即仅在这里判断
             tasks_name.append(f[:-5])
     tasks_name = sorted(tasks_name)
     all_tasks_name = tasks_name.copy()

@@ -2,9 +2,9 @@
 
 QuickUp的实验性质的Linux版本，基于Ubuntu 24.04 LTS。
 
-需要提前安装微软雅黑和Segoe Fluent Icons字体。
+需要提前安装微软雅黑和Segoe Fluent Icons字体（来自TinUI的依赖）。
 
-在`\usr\share\fonts`新建`windows`目录，存放msyh.ttc、msyhbd.ttc、msyhl.ttc、Segoe Fluent lcons.ttf。
+> 参考方案：在`\usr\share\fonts`新建`windows`目录，存放msyh.ttc、msyhbd.ttc、msyhl.ttc、Segoe Fluent lcons.ttf。
 
 > 可能需要如下操作：
 >
