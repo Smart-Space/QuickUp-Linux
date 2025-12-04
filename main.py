@@ -196,7 +196,7 @@ def if_taskEntry_empty(text):
     if text == '' and original_text != '':
         search_tasks('')
     else:
-        search_timer = root.after(700, lambda text=text: go_search_tasks(text))
+        search_timer = root.after(500, lambda text=text: go_search_tasks(text))
     original_text = text
     loading = False
 
@@ -275,7 +275,7 @@ if thisName == "QuickUp":
 else:
     with open("./ui-asset/main-part.xml", "r", encoding="utf-8") as f:
         uixml.loadxml(f.read())
-taskEntry = uixml.tags["taskEntry"][0]
+taskEntry:tk.Entry = uixml.tags["taskEntry"][0]
 taskEntry.focus_set()
 taskEntry.bind("<Return>", force_search_tasks)
 taskVar = taskEntry.var
@@ -322,6 +322,7 @@ root.bind("<Shift-Return>", run_this_task)
 root.bind("<Control-e>", edit_this_task)
 root.bind("<Up>", prev_task_view)
 root.bind("<Down>", next_task_view)
+root.bind("<FocusIn>", lambda e: taskEntry.focus_set())
 
 root.bind("<<RunCmdError>>", show_task_error)
 
